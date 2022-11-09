@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp">
+
+            <ImageButton
+                android:id="@+id/register_back"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_left_line"
+                android:background="@drawable/btn_form"
+                android:padding="10dp"
+                android:layout_gravity="start|center"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Crear cuenta"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Ingrese sus datos para continuar."
+                android:textColor="@color/textSecondary"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/register_names"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/edit_txt_form"
+                android:drawableLeft="@drawable/user_line"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="NOMBRES COMPLETOS"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/editHintColor"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_txt_form"
+                android:drawableLeft="@drawable/mail_line"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="CORREO"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/editHintColor"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/register_phone"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_txt_form"
+                android:drawableLeft="@drawable/phone_line"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="NRO DE CELULAR"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/editHintColor"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login_btn_register"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="55dp"
+                android:background="@drawable/btn_form"
+                android:fontFamily="@font/poppins_bold"
+                android:text="REGISTRARME"
+                android:textColor="@color/bgColor"
+                android:textSize="14sp" />
+
+            <!--TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="¿Contraseña Olvidada?"
+                android:textColor="@color/primaryColor"
+                android:textSize="14sp" /-->
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="¿Ya te registraste?"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/register_btn_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="\tIniciar sesión"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
