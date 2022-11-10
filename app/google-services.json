@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1050220572103",
+    "firebase_url": "https://devices-edd5d-default-rtdb.firebaseio.com",
+    "project_id": "devices-edd5d",
+    "storage_bucket": "devices-edd5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050220572103:android:f5e7b79617c14552aafde2",
+        "android_client_info": {
+          "package_name": "com.aukde.haklis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050220572103-ufnjsa5redl6337rtbt061vstcjf4op0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyjOQEHUnxkVrIE7xLZyYKdgw1ZBaeqH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050220572103-ufnjsa5redl6337rtbt061vstcjf4op0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

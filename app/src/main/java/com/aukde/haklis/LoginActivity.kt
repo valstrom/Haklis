@@ -1,7 +1,6 @@
 package com.aukde.haklis
 
 import android.content.Intent
-import android.content.SharedPreferences
 import android.os.Build
 import android.os.Bundle
 import android.view.View
@@ -14,7 +13,7 @@ import androidx.appcompat.widget.AppCompatButton
 import com.rilixtech.widget.countrycodepicker.CountryCodePicker
 
 
-class MainActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onStart() {
@@ -60,7 +59,7 @@ class MainActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.screen_login)
         supportActionBar?.hide()
 
         val sharedPref = getSharedPreferences(R.string.privateData.toString(), MODE_PRIVATE)
@@ -70,7 +69,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun goToRegisterScreen(){
-        val intent = Intent(this, ScreenRegister::class.java)
+        val intent = Intent(this, RegisterActivity::class.java)
         startActivity(intent)
     }
 

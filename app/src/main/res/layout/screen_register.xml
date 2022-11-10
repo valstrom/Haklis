@@ -46,11 +46,54 @@
                 android:textColor="@color/textSecondary"
                 android:textSize="16sp" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                android:layout_marginTop="40dp">
+                <LinearLayout
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                        android:id="@+id/reg_cpp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        app:ccp_defaultNameCode="PE"
+                        app:ccp_textColor="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:layout_marginHorizontal="5dp">
+                    <EditText
+                        android:id="@+id/register_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/edit_txt_form"
+                        android:drawableLeft="@drawable/phone_line"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="CELULAR"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textColor="#ffffff"
+                        android:textColorHint="@color/editHintColor"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
             <EditText
                 android:id="@+id/register_names"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/edit_txt_form"
                 android:drawableLeft="@drawable/user_line"
                 android:drawablePadding="10dp"
@@ -81,19 +124,20 @@
                 android:textColor="#ffffff"
                 android:textColorHint="@color/editHintColor"
                 android:textSize="14sp" />
-
             <EditText
-                android:id="@+id/register_phone"
+                android:id="@+id/register_pass"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/edit_txt_form"
-                android:drawableLeft="@drawable/phone_line"
+                android:drawableLeft="@drawable/lock_line"
                 android:drawablePadding="10dp"
                 android:fontFamily="@font/poppins_regular"
-                android:hint="NRO DE CELULAR"
-                android:inputType="textEmailAddress"
+                android:hint="CONTRASEÑA"
+                android:inputType="textPassword"
+                android:maxLength="20"
                 android:maxLines="1"
+
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
                 android:textColor="#ffffff"
@@ -101,7 +145,7 @@
                 android:textSize="14sp" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/login_btn_register"
+                android:id="@+id/register_btn_register"
                 android:layout_width="match_parent"
                 android:layout_marginTop="20dp"
                 android:layout_height="55dp"
